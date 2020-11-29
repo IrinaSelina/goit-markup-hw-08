@@ -1,0 +1,62 @@
+.container-about {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.main-about {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  .list-item {
+    display: inline-block;
+    justify-content: space-between;
+    width: 270px;
+    margin-right: 26px;
+  }
+  .list-item:last-child,
+  .network-list li:last-child {
+    margin-right: 0px;
+  }
+}
+.advantages {
+  color: $titel-text-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.17em;
+  margin: 0px;
+}
+.notes {
+  color: $primary-text-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71em;
+  margin: 0px;
+  padding-top: 10px;
+}
+.list-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: 100px 25px;
+  background-color: $bgc;
+  margin-bottom: 30px;
+}
+.list-item.attention::before {
+  background-image: url(../img/antenna.svg);
+}
+.list-item.pynctuality::before {
+  background-image: url(../img/clock.svg);
+}
+.list-item.planning::before {
+  background-image: url(../img/diagram.svg);
+}
+.list-item.technology::before {
+  background-image: url(../img/astronaut.svg);
+}

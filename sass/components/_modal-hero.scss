@@ -1,0 +1,58 @@
+.backdrop {
+  position: fixed;
+
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 55;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  min-width: 528px;
+  min-height: 581px;
+  background-color: $with;
+  border-radius: 4px;
+  color: #757575;
+  padding: 40px;
+  font-size: 12px;
+  line-height: 1.17em;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 1.17em;
+  font-style: normal;
+  color: #757575;
+  > .modal-button-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 7px;
+    top: 7px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+}
+.modal-button-close:hover {
+  color: $accent-text-color;
+  font-weight: 700;
+}
+.modal-titel {
+  font-style: 700;
+  font-size: 20px;
+  line-height: 1.17em;
+  font-style: normal;
+  text-align: center;
+  color: #212121;
+  margin: 0;
+  margin-bottom: 12px;
+}

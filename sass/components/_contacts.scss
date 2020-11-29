@@ -1,0 +1,40 @@
+.contacts {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  align-items: center;
+  text-align: right;
+  padding: 0px;
+  margin-left: auto;
+
+  .contacts-list {
+    margin-right: 50px;
+    display: inline-block;
+  }
+  .contacts-list:last-child {
+    margin-right: 0px;
+  }
+}
+.contacts-mail-tel {
+  color: $primary-text-color;
+  text-align: end;
+  &:last-child {
+    padding-right: 0px;
+  }
+  &:hover .mail,
+  &:focus .mail {
+    fill: $accent-text-color;
+  }
+  .mail {
+    height: 16px;
+    width: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-right: 10px;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

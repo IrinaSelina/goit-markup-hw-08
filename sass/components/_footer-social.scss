@@ -1,0 +1,42 @@
+.join-footer {
+  margin-left: 70px;
+  b {
+    display: block;
+    color: $with;
+    margin-bottom: 20px;
+  }
+}
+.join-list {
+  display: flex;
+  li {
+    margin-right: 10px;
+  }
+}
+.join {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  &.inst {
+    background-image: url(../img/instagram.svg);
+  }
+  &.twitter {
+    background-image: url(../img/twitter.svg);
+  }
+  &.facebook {
+    background-image: url(../img/facebook.svg);
+  }
+  &.linkedin {
+    background-image: url(../img/linkedin.svg);
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

@@ -1,0 +1,14 @@
+.footer {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: $fon-cl;
+  width: 100%;
+  height: 252px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.footer-cont {
+  display: flex;
+  padding-top: 60px;
+}

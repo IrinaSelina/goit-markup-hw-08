@@ -19,22 +19,34 @@
 }
 .contacts-mail-tel {
   color: $primary-text-color;
-  text-align: end;
+  display: flex;
+  align-items: center;
+
   &:last-child {
     padding-right: 0px;
   }
-  &:hover .mail,
-  &:focus .mail {
+  &:hover .contacts-list-svg,
+  &:focus .contacts-list-svg {
     fill: $accent-text-color;
   }
-  .mail {
-    height: 16px;
+  .contacts-list-svg {
     width: 16px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
+    width: 16px;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-position-x: center;
+
     margin-right: 10px;
+    fill: $primary-text-color;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+.mail-svg {
+  width: 16px;
+  height: 12px;
+}
+.smartphon-svg {
+  height: 16px;
+  width: 10px;
 }

@@ -1,8 +1,9 @@
 .container-about {
-  @include for-size(mobile-only) {
+  @include for-size(mobile) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -16,10 +17,13 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @include for-size(desktop) {
+    flex-wrap: nowrap;
+  }
   padding: 0px;
   margin: 0px;
   width: 100%;
-  flex-wrap: nowrap;
+
   .list-item {
     display: inline-block;
     justify-content: space-between;
@@ -33,13 +37,21 @@
       }
     }
     @include for-size(tablet) {
-      width: calc((100%-30px) / 2);
-      // &:not(:last-child) {
-      //   margin-right: 30px;
+      width: calc((100% - 30px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+      text-align: left;
+      &:nth-child(2n) {
+        margin-right: 0px;
+      }
     }
     @include for-size(desktop) {
       width: 270px;
       margin-right: 26px;
+
+      &:nth-child(2n) {
+        margin-right: 26px;
+      }
     }
   }
 }

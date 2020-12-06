@@ -17,17 +17,19 @@
 
   .contacts-list {
     display: block;
+    margin-right: 30px;
 
     @include for-size(mobile-only) {
       margin-bottom: 16px;
     }
     @include for-size(desktop) {
+      display: inline-block;
+
       &:not(:last-child) {
         margin-right: 30px;
       }
-      display: inline-block;
     }
-    .contacts-list:last-child {
+    &:last-child {
       margin-right: 0px;
     }
   }

@@ -28,7 +28,7 @@
 .teams {
   display: inline-block;
   background-color: $with;
-  margin-right: 26px;
+
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -41,6 +41,20 @@
     margin: 0px;
     &:not(:last-child) {
       margin-bottom: 30px;
+    }
+  }
+  @include for-size(tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+    @include for-size(desktop) {
+      flex-basis: calc((100% - 30px) / 4);
+      &:not(:last-child) {
+        margin-right: 26px;
+      }
     }
   }
 }

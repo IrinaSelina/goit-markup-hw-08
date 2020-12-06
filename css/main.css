@@ -624,7 +624,6 @@ ul {
   color: #ffffff;
   background-color: #2f303a;
   justify-content: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/main.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -636,12 +635,14 @@ ul {
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/images-hero/header-480.jpg");
   }
 }
 
 @media (min-width: 768px) {
   .main-section {
     max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/images-hero/header-768.jpg");
   }
 }
 
@@ -651,6 +652,25 @@ ul {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/images-hero/header-1200.jpg");
+  }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 480px) {
+  .main-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/images-hero/header-480-2x.jpg");
+  }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/images-hero/header-768-2x.jpg");
+  }
+}
+
+@media (min-resolution: 2dppx) and (min-width: 1280px) {
+  .main-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/images-hero/header-1200-2x.jpg");
   }
 }
 

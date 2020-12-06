@@ -230,15 +230,87 @@
           <h2 class="about-us">Чем мы занимаемся</h2>
           <ul class="images">
             <li class="image-menu">
-              <img src="./img/box1.jpg" alt="box1" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/works/desktop/code.jpg    1x,
+                    ./img/works/desktop/code@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/tablet/code.jpg    1x,
+                    ./img/works/tablet/code@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/mob/code.jpg    1x,
+                    ./img/works/mob/code@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./img/box1.jpg" alt="box1" width="370" />
+              </picture>
+
               <p class="images-list-item">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="image-menu">
-              <img src="./img/box2.jpg" alt="box2" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/works/desktop/mobile.jpg    1x,
+                    ./img/works/desktop/mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/tablet/mobile.jpg    1x,
+                    ./img/works/tablet/mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/mob/mobile.jpg    1x,
+                    ./img/works/mob/mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./img/box2.jpg" alt="box2" width="370" />
+              </picture>
+
               <p class="images-list-item">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="image-menu">
-              <img src="./img/box3.jpg" alt="box3" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/works/desktop/grafic.jpg    1x,
+                    ./img/works/desktop/grafic@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/tablet/grafic.jpg    1x,
+                    ./img/works/tablet/grafic@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/mob/grafic.jpg    1x,
+                    ./img/works/mob/grafic@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./img/box3.jpg" alt="box3" width="370" />
+              </picture>
+
               <p class="images-list-item">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
             </li>
           </ul>

@@ -84,12 +84,18 @@
   @include for-size(mobile-only) {
     background-position: 50% 50%;
   }
+  @include for-size(tablet) {
+    background-position: 50% 50%;
+  }
+  @include for-size(desktop) {
+    background-position: 100px 25px;
+  }
   content: "";
   display: block;
   height: 120px;
   border-radius: 4px;
   background-repeat: no-repeat;
-  background-position: 100px 25px;
+
   background-color: $bgc;
   margin-bottom: 30px;
 }

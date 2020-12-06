@@ -1012,7 +1012,6 @@ ul {
   height: 120px;
   border-radius: 4px;
   background-repeat: no-repeat;
-  background-position: 100px 25px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
 }
@@ -1020,6 +1019,18 @@ ul {
 @media (max-width: 767px) {
   .list-item::before {
     background-position: 50% 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-item::before {
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .list-item::before {
+    background-position: 100px 25px;
   }
 }
 
@@ -1351,6 +1362,12 @@ ul {
 @media (max-width: 767px) {
   .customed-link {
     width: 210px;
+  }
+}
+
+@media (min-width: 768px) {
+  .customed-link {
+    display: inline-flex;
   }
 }
 

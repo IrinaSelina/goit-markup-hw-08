@@ -76,6 +76,9 @@
   @include for-size(mobile-only) {
     width: 210px;
   }
+  @include for-size(tablet) {
+    display: inline-flex;
+  }
 }
 .customed-link-svg {
   width: 89px;

@@ -4,6 +4,9 @@
   flex-basis: calc((100%-30) / 3);
   flex-wrap: wrap;
   margin: 0px;
+  @include for-size(mobile-only) {
+    justify-content: center;
+  }
 }
 .link-menu {
   display: block;
@@ -15,6 +18,9 @@
   }
   &:nth-child(3n + 1) {
     margin-left: 0px;
+  }
+  @include for-size(mobile-only) {
+    margin-left: 0;
   }
 }
 .pr-link {

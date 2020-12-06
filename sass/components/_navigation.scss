@@ -1,23 +1,27 @@
+.header-titel {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .link {
-    margin-right: 0px;
+  text-align: center;
+  @include for-size(tablet) {
+    margin-right: 84px;
+    margin-top: 16px;
   }
-  .logo {
-    font-family: "Raleway", sans-serif;
-    color: $accent-text-color;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.17em;
-    width: 145px;
-    margin-right: 93px;
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 205px;
+    margin-top: 0px;
   }
+
   .site-nav {
     justify-content: end;
-    display: flex;
+
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -25,34 +29,131 @@
     line-height: 1.17em;
     padding: 0px;
     align-items: center;
+    @include for-size(tablet) {
+      display: flex;
+    }
+    @include for-size(desktop) {
+    }
+  }
+}
+
+.menu-button {
+  @include for-size(mobile-only) {
+    display: inline-flex;
+  }
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  border: none;
+  .icon-close {
+    display: none;
+  }
+  &.is-open .icon-close {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+.header-menu {
+  display: flex;
+  background-color: white;
+
+  @include for-size(mobile-only) {
+    display: none;
+    position: absolute;
+    max-width: 480px;
+    height: 393px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 60px 140px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+    &.is-open {
+      display: block;
+    }
+  }
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+
+.menu-button-svg {
+  width: 40px;
+  height: 40px;
+}
+.link {
+  margin-right: 0px;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  color: $accent-text-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.38em;
+  margin-right: auto;
+  @include for-size(tablet) {
+    margin-top: 8px;
+  }
+  @include for-size(desktop) {
+    font-size: 26px;
+    line-height: 1.17em;
+    margin-top: 0px;
   }
 }
 .site-nav-list {
-  display: inline-block;
-  padding-right: 50px;
-  .site-nav-list:last-child {
-    padding-right: 0px;
+  display: block;
+  @include for-size(mobile-only) {
+    margin-bottom: 40px;
+    display: list-item;
   }
-}
-.primery-nav {
-  position: relative;
+  @include for-size(tablet) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 
-  color: $accent-text-color;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17em;
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    background-image: url(../img/hover.svg);
-    height: 4px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 28px;
+  @include for-size(desktop) {
+    display: inline-block;
+    padding-right: 50px;
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+  .primery-nav {
+    position: relative;
+    color: $accent-text-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17em;
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      background-image: url(../img/hover.svg);
+      height: 4px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-top: 8px;
+      @include for-size(tablet) {
+        margin-top: 28px;
+      }
+      @include for-size(desktop) {
+        // margin-top: 28px;
+      }
+    }
+    @include for-size(tablet) {
+      font-size: 14px;
+    }
+    @include for-size(desktop) {
+      font-size: 14px;
+    }
   }
 }
 .button-secondary {

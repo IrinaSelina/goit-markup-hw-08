@@ -22,45 +22,65 @@
   </head>
   <body>
     <header>
-      <!-- логотип, вкладки, контакты -->
-
-      <div class="container header">
-        <nav class="navigation">
+      <div class="container">
+        <div class="header">
           <a href="./index.html" class="link logo"
             >Web<span class="logo-accent">Studio</span></a
           >
-          <ul class="site-nav">
-            <li class="site-nav-list">
-              <a href="./" class="link primery-nav">Студия</a>
-            </li>
-            <li class="site-nav-list">
-              <a href="./portfolio.html" class="link button-secondary"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav-list">
-              <a href="" class="link button-secondary">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts-list">
-            <a href="mailto:info@devstudio.com" class="link contacts-mail-tel">
-              <svg class="contacts-list-svg mail-svg">
-                <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com</a
+          <button type="button" class="menu-button" data-menu-button>
+            <svg
+              class="menu-button-svg"
+              aria-label="Переключатель мобильного меню"
             >
-          </li>
-          <li class="contacts-list">
-            <a class="link contacts-mail-tel" href="tel:+380991111111">
-              <svg class="contacts-list-svg smartphon-svg">
-                <use href="./img/symbol-defs.svg#smartphone"></use>
-              </svg>
-              +38 099 111 11 11</a
-            >
-          </li>
-        </ul>
+              <use
+                class="icon-close"
+                href="./img/symbol-defs.svg#icon-close"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./img/symbol-defs.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="header-menu" data-menu>
+            <nav class="navigation">
+              <ul class="site-nav">
+                <li class="site-nav-list">
+                  <a href="./" class="link primery-nav">Студия</a>
+                </li>
+                <li class="site-nav-list">
+                  <a href="./portfolio.html" class="link button-secondary"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="site-nav-list">
+                  <a href="" class="link button-secondary">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contacts">
+              <li class="contacts-list">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="link contacts-mail-tel"
+                >
+                  <svg class="contacts-list-svg mail-svg">
+                    <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-list">
+                <a class="link contacts-mail-tel" href="tel:+380991111111">
+                  <svg class="contacts-list-svg smartphon-svg">
+                    <use href="./img/symbol-defs.svg#smartphone"></use>
+                  </svg>
+                  +38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -81,7 +101,7 @@
           <div data-modal class="backdrop is-hidden">
             <div class="modal">
               <button class="modal-button-close" data-modal-close>X</button>
-              <!-- форма в модальном окне -->
+
               <h2 class="modal-titel">
                 Оставьте свои данные, мы вам перезвоним
               </h2>
@@ -170,7 +190,6 @@
       <!-- хотят обратить внимание -->
       <section class="container-about">
         <div class="container">
-          <!-- <h2>О нас</h2> -->
           <ul class="main-about">
             <li class="list-item attention">
               <h3 class="advantages">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -501,7 +520,7 @@
 
     <footer class="footer">
       <div class="container footer-cont">
-        <div>
+        <div class="footer-wrapper">
           <a href="./studio.html" class="logo-footer"
             >Web<span class="logo-ac-footer">Studio</span></a
           >
@@ -547,6 +566,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
     <script src="./js/madal.js"></script>
   </body>
 </html>

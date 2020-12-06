@@ -7,7 +7,9 @@
   }
 }
 .form-footer {
-  display: flex;
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 .foter-input {
   width: 357px;

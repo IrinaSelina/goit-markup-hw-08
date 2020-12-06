@@ -7,6 +7,14 @@
 }
 
 .form-label {
+  @include for-size(mobile) {
+    font-size: 12px;
+    line-height: 1.17em;
+  }
+  @include for-size(desktop) {
+    font-size: 14px;
+    line-height: 1.71em;
+  }
   margin-bottom: 4px;
   position: relative;
 }

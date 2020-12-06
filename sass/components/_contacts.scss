@@ -1,20 +1,35 @@
 .contacts {
+  @include for-size(desktop) {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.14em;
+  }
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14em;
+  font-size: 18px;
+  line-height: 1.17em;
   align-items: center;
   text-align: right;
   padding: 0px;
   margin-left: auto;
 
   .contacts-list {
-    margin-right: 50px;
-    display: inline-block;
-  }
-  .contacts-list:last-child {
-    margin-right: 0px;
+    display: block;
+
+    @include for-size(mobile-only) {
+      margin-bottom: 16px;
+    }
+    @include for-size(desktop) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      display: inline-block;
+    }
+    .contacts-list:last-child {
+      margin-right: 0px;
+    }
   }
 }
 .contacts-mail-tel {
@@ -49,4 +64,7 @@
 .smartphon-svg {
   height: 16px;
   width: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }

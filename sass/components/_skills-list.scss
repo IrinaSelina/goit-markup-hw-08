@@ -1,26 +1,53 @@
 .container-about {
+  @include for-size(mobile-only) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .main-about {
+  @include for-size(mobile-only) {
+    display: block;
+  }
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   padding: 0px;
   margin: 0px;
   width: 100%;
-  display: flex;
   flex-wrap: nowrap;
   .list-item {
     display: inline-block;
     justify-content: space-between;
-    width: 270px;
-    margin-right: 26px;
-  }
-  .list-item:last-child,
-  .network-list li:last-child {
-    margin-right: 0px;
+
+    @include for-size(mobile-only) {
+      margin: 0px;
+      min-width: 100%;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+    @include for-size(tablet) {
+      width: calc((100%-30px) / 2);
+      // &:not(:last-child) {
+      //   margin-right: 30px;
+    }
+    @include for-size(desktop) {
+      width: 270px;
+      margin-right: 26px;
+    }
   }
 }
+.list-item:last-child,
+.network-list li:last-child {
+  margin-right: 0px;
+}
+
 .advantages {
   color: $titel-text-color;
   font-style: normal;
@@ -28,6 +55,9 @@
   font-size: 14px;
   line-height: 1.17em;
   margin: 0px;
+  @include for-size(mobile-only) {
+    text-align: center;
+  }
 }
 .notes {
   color: $primary-text-color;
@@ -39,6 +69,9 @@
   padding-top: 10px;
 }
 .list-item::before {
+  @include for-size(mobile-only) {
+    background-position: 50% 50%;
+  }
   content: "";
   display: block;
   height: 120px;

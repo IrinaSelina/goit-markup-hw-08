@@ -2,14 +2,20 @@
   text-align: inherit;
   margin: 0px;
   padding-bottom: 94px;
+  @include for-size(mobile-only) {
+    padding-bottom: 0px;
+  }
   .images {
     margin: 0px;
     padding: 0px;
   }
 }
 .images-list {
-  display: block;
-  flex-wrap: wrap;
+  display: none;
+  @include for-size(desktop) {
+    display: block;
+    flex-wrap: wrap;
+  }
 }
 .about-us {
   display: block;

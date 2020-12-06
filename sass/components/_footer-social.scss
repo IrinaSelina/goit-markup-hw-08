@@ -1,5 +1,8 @@
 .join-footer {
-  margin-left: 70px;
+  @include for-size(desktop) {
+    margin-left: 70px;
+  }
+
   b {
     display: block;
     color: $with;

@@ -79,6 +79,7 @@
   line-height: 1.71em;
   margin: 0px;
   padding-top: 10px;
+  text-align: left;
 }
 .list-item::before {
   @include for-size(mobile-only) {

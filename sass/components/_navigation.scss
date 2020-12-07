@@ -9,13 +9,14 @@
   text-align: center;
   @include for-size(tablet) {
     margin-right: 84px;
-    margin-top: 16px;
+    display: flex;
+    align-items: center;
   }
   @include for-size(desktop) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 205px;
+    margin-right: 305px;
     margin-top: 0px;
   }
 
@@ -96,12 +97,13 @@
   line-height: 1.38em;
   margin-right: auto;
   @include for-size(tablet) {
-    margin-top: 8px;
+    margin-right: 88px;
   }
   @include for-size(desktop) {
     font-size: 26px;
     line-height: 1.17em;
     margin-top: 0px;
+    margin-right: 93px;
   }
 }
 .site-nav-list {
@@ -118,7 +120,7 @@
 
   @include for-size(desktop) {
     display: inline-block;
-    padding-right: 50px;
+
     &:last-child {
       padding-right: 0px;
     }

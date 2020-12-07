@@ -39,9 +39,9 @@
 }
 .adresss-footer {
   margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 60px;
   @include for-size(mobile) {
-    margin-top: 20px;
-    margin-bottom: 60px;
   }
 }
 .mail-tel {

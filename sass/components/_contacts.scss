@@ -4,6 +4,9 @@
     font-size: 14px;
     line-height: 1.14em;
   }
+  @include for-size(tablet) {
+    font-size: 12px;
+  }
 
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -17,20 +20,24 @@
 
   .contacts-list {
     display: block;
-    margin-right: 30px;
 
     @include for-size(mobile-only) {
       margin-bottom: 16px;
     }
+    @include for-size(tablet) {
+      margin-bottom: 8px;
+    }
     @include for-size(desktop) {
       display: inline-block;
-
+      margin-right: 30px;
+      margin-bottom: 0px;
       &:not(:last-child) {
         margin-right: 30px;
       }
     }
     &:last-child {
       margin-right: 0px;
+      margin-bottom: 0px;
     }
   }
 }

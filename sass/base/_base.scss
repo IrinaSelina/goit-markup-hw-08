@@ -8,7 +8,8 @@ html {
   box-sizing: border-box;
 }
 .container {
-  max-width: 480px;
+  width: 100%;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -16,6 +17,9 @@ html {
   text-align: center;
   &:first-child {
     margin-top: 0px;
+  }
+  @include for-size(mobile) {
+    max-width: 480px;
   }
   @include for-size(tablet) {
     max-width: 768px;

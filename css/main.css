@@ -658,19 +658,19 @@ ul {
 
 @media (min-resolution: 2dppx) and (min-width: 480px) {
   .main-section {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/images-hero/header-480-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./img/images-hero/header-480-2x.jpg");
   }
 }
 
 @media (min-resolution: 2dppx) and (min-width: 768px) {
   .main-section {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/images-hero/header-768-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./img/images-hero/header-768-2x.jpg");
   }
 }
 
 @media (min-resolution: 2dppx) and (min-width: 1280px) {
   .main-section {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/images-hero/header-1200-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./img/images-hero/header-1200-2x.jpg");
   }
 }
 

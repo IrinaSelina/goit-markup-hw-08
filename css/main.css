@@ -771,11 +771,11 @@ ul {
 
 .modal {
   top: 50%;
+  min-width: 290px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: left;
-  min-width: 528px;
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -790,15 +790,7 @@ ul {
   color: #757575;
 }
 
-@media (max-width: 767px) {
-  .modal {
-    min-width: 320px;
-    min-height: 609px;
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .modal {
     min-width: 450px;
     min-height: 609px;

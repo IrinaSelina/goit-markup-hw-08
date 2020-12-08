@@ -45,10 +45,9 @@
   }
 }
 .button-subscribe {
-  @include for-size(mobile) {
-    display: inline-flex;
-    flex-direction: row-reverse;
-  }
+  display: inline-flex;
+  flex-direction: row-reverse;
+
   @include for-size(desktop) {
     display: flex;
     margin-left: 12px;

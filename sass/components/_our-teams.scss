@@ -60,6 +60,9 @@
 }
 .name-pos {
   padding-top: 30px;
+  @include for-size(mobile-only) {
+    padding-bottom: 24px;
+  }
 }
 .name {
   font-style: normal;
